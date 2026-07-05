@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Club Barbearia - Agendamento Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+
+    <div class="demo-banner">
+        ⚠️ Modo de Demonstração - Agendamentos desativados
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <ul class="desktop-menu">
+                <li><a href="#" class="active" data-target="top">Início</a></li>
+                <li><a href="#services-section" data-target="services">Serviços</a></li>
+                <li><a href="#date-section" data-target="date">Horários</a></li>
+            </ul>
+
+            <div class="nav-icon" id="btn-hamburger-mobile" aria-label="Menu">
+                <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </div>
+
+            <div class="logo">Bob Club</div>
+
+            <ul class="desktop-menu">
+                <li><a href="#profile-section" data-target="profile">Nosso Perfil</a></li>
+                <li><a href="#" id="btn-desktop-account">Minha Conta</a></li>
+            </ul>
+
+            <div class="nav-icon" id="btn-profile-mobile" aria-label="Perfil">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+            </div>
+        </div>
+
+        <div class="mobile-menu-dropdown" id="mobile-dropdown">
+            <a href="#" class="mobile-menu-link" data-target="top">Início</a>
+            <a href="#services-section" class="mobile-menu-link" data-target="services">Serviços</a>
+            <a href="#date-section" class="mobile-menu-link" data-target="date">Horários</a>
+            <a href="#profile-section" class="mobile-menu-link" data-target="profile">Nosso Perfil</a>
+        </div>
+    </header>
+
+    <div class="hero-mobile">
+        <div class="hero-icon-wrapper">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 3c-1.1 0-2 .9-2 2v1.16c-1.07.38-1.89 1.31-2.11 2.47L13 13V5c0-1.1-.9-2-2-2s-2 .9-2 2v12.17c-.22-1.16-1.04-2.09-2.11-2.47V5c0-1.1-.9-2-2-2s-2 .9-2 2v14c0 1.1.9 2 2 2s2-.9 2-2v-1.16c1.07-.38 1.89-1.31 2.11-2.47L11 15v8c0 1.1.9 2 2 2s2-.9 2-2v-8.17c.22 1.16 1.04 2.09 2.11 2.47V19c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+        </div>
+        <h1>Estilo, tradição e excelência.</h1>
+        <div class="decor-line"></div>
+    </div>
+
+    <main class="main-layout">
+        
+        <div class="left-column">
+            
+            <section id="services-section">
+                <div class="section-title">
+                    Selecione os Serviços
+                    <span class="section-subtitle-count" id="services-counter">0 de 4 selecionados</span>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-id="corte" data-price="85">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-circle">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-header">
+                                <span class="service-name">Corte Premium</span>
+                                <span class="service-price">R$ 85</span>
+                            </div>
+                            <p class="service-description">Lavagem, corte personalizado e finalização com produtos importados da linha profissional.</p>
+                            <div class="service-duration">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                                45 min
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-id="barba" data-price="60">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-circle">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-header">
+                                <span class="service-name">Barba Spa</span>
+                                <span class="service-price">R$ 60</span>
+                            </div>
+                            <p class="service-description">Toalha quente clássica, barbear tradicional com navalha artesanal e hidratação profunda pós-barba.</p>
+                            <div class="service-duration">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                                30 min
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-id="sobrancelha" data-price="45">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-circle">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-header">
+                                <span class="service-name">Sobrancelha</span>
+                                <span class="service-price">R$ 45</span>
+                            </div>
+                            <p class="service-description">Limpeza fina e alinhamento geométrico de sobrancelha na pinça ou na navalha conforme preferência.</p>
+                            <div class="service-duration">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                                15 min
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-id="combo" data-price="120">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-circle">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-header">
+                                <span class="service-name">Combo Elite</span>
+                                <span class="service-price">R$ 120</span>
+                            </div>
+                            <p class="service-description">Corte Premium + Barba Spa combinados com um desconto exclusivo de mestre da barbearia.</p>
+                            <div class="service-duration">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                                75 min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="professionals-section">
+                <div class="section-title">Escolha o Profissional</div>
+                <div class="professionals-flex">
+                    <div class="prof-card selected" data-name="Ricardo">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-circle">
+                                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <span class="prof-name">Ricardo</span>
+                    </div>
+
+                    <div class="prof-card" data-name="Gustavo">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-circle">
+                                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <span class="prof-name">Gustavo</span>
+                    </div>
+
+                    <div class="prof-card" data-name="Qualquer Um">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-circle">
+                                <svg viewBox="0 0 24 24" style="width: 22px; height: 22px; fill: #A0A0A0;"><path d="M16.5 13c-1.2 0-3.07.34-4.1.75c-1.03-.41-2.9-.75-4.1-.75C6.1 13 2 14.73 2 17.5V21h20v-3.5c0-2.77-4.1-4.5-5.5-4.5zM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12zm9 0c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5z"/></svg>
+                            </div>
+                        </div>
+                        <span class="prof-name">Qualquer Um</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="profile-section">
+                <div class="section-title">Nosso Perfil</div>
+                <div class="profile-card-box">
+                    <div class="profile-avatar">💈</div>
+                    <h3 class="profile-shop-name">Bob Club Barbearia</h3>
+                    <p class="profile-shop-bio">Siga o nosso perfil oficial no Instagram para acompanhar nossos trabalhos, novidades da casa e promoções exclusivas!</p>
+                    <a href="https://www.instagram.com/bobclub.barbearia/" target="_blank" class="btn-instagram" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        @bobclub.barbearia
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <div class="scheduling-box">
+            
+            <section id="date-section">
+                <div class="section-title">Escolha a Data</div>
+                <div class="date-slider">
+                    <div class="date-card selected" data-date="Seg, 18">
+                        <div class="date-day-name">Seg</div>
+                        <div class="date-day-num">18</div>
+                    </div>
+                    <div class="date-card" data-date="Ter, 19">
+                        <div class="date-day-name">Ter</div>
+                        <div class="date-day-num">19</div>
+                    </div>
+                    <div class="date-card" data-date="Qua, 20">
+                        <div class="date-day-name">Qua</div>
+                        <div class="date-day-num">20</div>
+                    </div>
+                    <div class="date-card" data-date="Qui, 21">
+                        <div class="date-day-name">Qui</div>
+                        <div class="date-day-num">21</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="time-section">
+                <div class="section-title">Horários Disponíveis</div>
+                <div class="time-grid">
+                    <div class="time-slot" data-time="09:00">09:00</div>
+                    <div class="time-slot disabled" data-time="10:00">10:00</div>
+                    <div class="time-slot selected" data-time="11:00">11:00</div>
+                    <div class="time-slot disabled" data-time="14:00">14:00</div>
+                    <div class="time-slot disabled" data-time="15:00">15:00</div>
+                    <div class="time-slot" data-time="16:00">16:00</div>
+                    <div class="time-slot" data-time="17:00">17:00</div>
+                </div>
+            </section>
+
+            <section class="checkout-panel">
+                <div class="checkout-row">
+                    <span>Subtotal</span>
+                    <span id="txt-subtotal">R$ 0,00</span>
+                </div>
+                <div class="checkout-row">
+                    <span>Taxa de reserva</span>
+                    <span>R$ 0,00</span>
+                </div>
+                
+                <div class="checkout-row total-row">
+                    <span class="total-label">Total</span>
+                    <div class="total-price-box">
+                        <span class="total-currency">R$</span>
+                        <span class="total-value" id="txt-total">0,00</span>
+                    </div>
+                </div>
+
+                <button class="btn-confirm" id="btn-submit-booking">
+                    Confirmar Agendamento
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43L12.85 20l7.15-7.15L20 12l-.71-.71L12.15 4.15l-1.42 1.42L16.15 11H5v2z"/></svg>
+                </button>
+                <p class="checkout-disclaimer">Cancelamento gratuito até 24h antes do horário marcado.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="demo-modal">
+        <div class="modal-card">
+            <div class="modal-icon">✂️</div>
+            <h2 class="modal-title">Protótipo de Demonstração</h2>
+            <p class="modal-text">
+                ✂️ Esta é uma demonstração visual do sistema! Na versão final e oficial, este botão salvará seu horário instantaneamente, impedindo que outro cliente pegue a mesma vaga e enviará uma confirmação direto para o WhatsApp do barbeiro.
+            </p>
+            <button class="btn-modal-close" id="btn-close-modal">Entendi, Fechar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Bob Club</h3>
+                <p>Excelência em barbearia clássica e moderna.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button>OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Bob Club Barbearia Grooming Co.
+        </div>
+    </footer>
+
+    <nav class="bottom-nav">
+        <div class="bottom-nav-item" data-target="top">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            Início
+        </div>
+        <div class="bottom-nav-item active" data-target="date">
+            <svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+            Horários
+        </div>
+        <div class="bottom-nav-item" data-target="services">
+            <svg viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2s-2 .9-2 2v14zm10-4c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2s-2 .9-2 2v8c0 1.1.9 2 2 2zm-4 4c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2s-2 .9-2 2v12c0 1.1.9 2 2 2z"/></svg>
+            Serviços
+        </div>
+        <div class="bottom-nav-item" data-target="profile">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            Perfil
+        </div>
+    </nav>
+
+</body>
+</html>
